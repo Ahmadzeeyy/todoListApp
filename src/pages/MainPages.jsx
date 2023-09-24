@@ -2,9 +2,7 @@ import React from 'react'
 import ButtonDelete from '../component/ButtonDelete'
 import FilterItem from '../component/FilterItem'
 import ItemsList from '../component/ItemsList'
-import Header from '../component/header'
-import { useState } from 'react'
-import data  from '../data/data.json'
+import Header from '../component/Header'
 
 
 function MainPages({item, setItem}) {
