@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+// eslint-disable-next-line react/prop-types
 function Header({searchItem}) {
     const[dataFilter, setDataFilter] = useState('')
+    useEffect (()=> {
+      searchItem(dataFilter)
+    }, [dataFilter])
   return (
     <section > 
       <div className="header">

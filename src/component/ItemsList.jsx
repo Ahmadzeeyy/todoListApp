@@ -1,6 +1,6 @@
-import React from "react";
+import { useState } from "react";
 import LoadItem from "./LoadItem";
-
+// eslint-disable-next-line react/prop-types
 function ItemsList({ items, checkedItems, deleteItem, editedd }) {
   return (
     <section className="flex-col gap-3">
@@ -12,3 +12,4 @@ function ItemsList({ items, checkedItems, deleteItem, editedd }) {
 }
 
 export default ItemsList;
+  

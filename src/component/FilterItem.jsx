@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
-function FilterItem({ items, setData }) {
-  function handleFilter(dataSearch) {
-    if (dataSearch === "Done") {
-      setData(items.filter((item) => item.complete === true));
-    } else if (dataSearch === "Todo") {
-      setData(items.filter((item) => item.complete === false));
-    } else {
-      setData(items);
-    }
-  }
+// eslint-disable-next-line react/prop-types
+function FilterItem({ handleFilter }) {
   return (
     <section>
       <h1 className="text-center text-3xl font-semibold mt-14">TodoList</h1>
